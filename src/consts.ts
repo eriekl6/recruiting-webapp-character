@@ -1,4 +1,4 @@
-import type { Attributes, Class } from "./types";
+import type { Attributes, Character, Class } from "./types";
 
 export const ATTRIBUTE_LIST = [
     'Strength',
@@ -55,5 +55,36 @@ export const SKILL_LIST = [
     { name: 'Sleight of Hand', attributeModifier: 'Dexterity' },
     { name: 'Stealth', attributeModifier: 'Dexterity' },
     { name: 'Survival', attributeModifier: 'Wisdom' },
-
 ]
+
+export const DEFAULT_CHARACTER: Character = {
+    id: null,
+    attributes: {
+        Strength: 10,
+        Dexterity: 10,
+        Constitution: 10,
+        Intelligence: 10,
+        Wisdom: 10,
+        Charisma: 10,
+    },
+    skills: {
+        Acrobatics: 0,
+        'Animal Handling': 0,
+        Arcana: 0,
+        Athletics: 0,
+        Deception: 0,
+        History: 0,
+        Insight: 0,
+        Intimidation: 0,
+        Investigation: 0,
+        Medicine: 0,
+        Nature: 0,
+        Perception: 0,
+        Performance: 0,
+        Persuasion: 0,
+        Religion: 0,
+        'Sleight of Hand': 0,
+        Stealth: 0,
+        Survival: 0,
+    }
+}

@@ -8,3 +8,9 @@ export type Attributes = {
 };
 
 export type Class = "Barbarian" | "Wizard" | "Bard";
+
+export type Character = {
+    id: string;
+    attributes: Attributes;
+    skills: Record<string, number>; // Stores <skill, points spent on each>
+}
